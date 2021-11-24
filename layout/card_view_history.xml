@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/cardViewHistory"
+        android:padding="0dp"
+        app:cardElevation="5dp"
+        app:cardCornerRadius="10dp"
+        app:cardMaxElevation="5dp"
+        app:cardPreventCornerOverlap="true"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/carImageHistory"
+                android:layout_alignParentLeft="true">
+            </ImageView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Swift"
+                        android:id="@+id/carNameHistory"
+                        android:textSize="25dp"
+                        android:textColor="@color/black"
+                        android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dateFields">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Start"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        android:layout_alignParentLeft="true"
+                        android:id="@+id/startDateTV" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="11 aug "
+                        android:id="@+id/startDate"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/startDateTV"
+                        android:textColor="@color/black"
+                        android:layout_alignParentLeft="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="End"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/endDateTV" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12 aug "
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/black"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/endDate"
+                        android:layout_below="@+id/endDateTV"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rent Amount"
+                        android:id="@+id/rentAmountTVHistory"
+                        android:textColor="@color/black"
+                        android:layout_centerHorizontal="true"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1000"
+                        android:id="@+id/rentAmountHistory"
+                        android:textColor="@color/black"
+                        android:layout_centerHorizontal="true"
+                        android:textSize="20sp"
+                        android:layout_below="@+id/rentAmountTVHistory"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</RelativeLayout>

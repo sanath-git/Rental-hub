@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_back_arrow_foreground"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/backButtonIcon"
+            android:layout_centerVertical="true"/>
+        <TextView
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/headerRent"
+            android:text="Rent A Car Here"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+</merge>
